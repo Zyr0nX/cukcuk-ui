@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cukcuk.vn</title>
+    </head>
+    <body>
+        <div class="side-bar">
+
+            <div class="side-bar-logo">
+                <div class="toggle">
+                    <img src="../img/toggle.png" alt="">
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="../img/cukcuk-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <ul class="side-bar-link">
+                    <li>
+                        <a href="../employee.html">
+                            <img src="../icon/dashboard.png" alt="">
+                            <p>Danh sách nhân viên</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../custiomer.html">
+                            <img src="../icon/dic-employee.png" alt="">
+                            <p>Danh sách khách hàng</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="top-nav">
+
+                <div class="top-nav-left">
+                    <div class="top-nav-dropdown">
+                        <button class="dropdown-toggle" type="button">Nhà hàng hải sản Biển Đông</button>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Nhà hàng hải sản Biển Đông</a>
+                    </div>
+                </div>
+
+                <div class="top-nav-right">
+                    <div class="profile-picture">
+                        <img src="../icon/avatar-default.png" alt="">
+                    </div>
+                    <div class="profile-name">
+                        <p>Nguyễn Văn Mạnh</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-content">
+
+                <div class="header">
+                    <h1>Danh sách nhân viên</h1>
+                    <button class="button-icon" type="button">
+                        <img src="../icon/add.png" alt="">
+                        <p>Thêm nhân viên</p>
+                    </button>
+                </div>
+
+                <div class="search">
+                    <div class="search-left">
+                        <input id="textfield" type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
+                    </div>
+                    <div class="search-right">
+                        <button class="" type="button">
+                            <img src="../icon/search.png" alt=""> <!-- placeholder icon -->
+                            <!-- add an icon here -->
+                        </button>
+                        <button class="" type="button">
+                            <img src="../icon/search.png" alt=""> <!-- placeholder icon -->
+                        </button>
+                        <button class="" type="button">
+                            <img src="../icon/search.png" alt=""> <!-- placeholder icon -->
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã nhân viên</th>
+                                <th>Họ và tên</th>
+                                <th>Giới tính</th>
+                                <th>Ngày sinh</th>
+                                <th>Điện thoại</th>
+                                <th>Email</th>
+                                <th>Chức vụ</th>
+                                <th>Phòng ban</th>
+                                <th>Mức lương cơ bản</th>
+                                <th>Tình trạng công việc</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th>Nguyễn văn A</th>
+                                <th>Nam</th>
+                                <th>01/01/1970</th>
+                                <th>0123456789</th>
+                                <th>abc@example.com</th>
+                                <th>Nhân viên</th>
+                                <th>Phòng nhân sự</th>
+                                <th>10.000.000</th>
+                                <th>Đang thử việc</th>
+                            </tr>
+
+                            <tr>
+                                <th>2</th>
+                                <th>Nguyễn văn A</th>
+                                <th>Nam</th>
+                                <th>01/01/1970</th>
+                                <th>0123456789</th>
+                                <th>abc@example.com</th>
+                                <th>Nhân viên</th>
+                                <th>Phòng nhân sự</th>
+                                <th>10.000.000</th>
+                                <th>Đang thử việc</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer">
+                    <div>
+                        <p>Hiển thị 01-02/2 nhân viên</p>
+                    </div>
+                    <div>
+                        <button class="button-firstpage">
+                            <img src="../icon/btn-firstpage.svg" alt="">
+                        </button>
+
+                        <button class="button-nextpage">
+                            <img src="../icon/btn-prev-page.svg" alt="">
+                        </button>
+
+                        <button>1</button>
+                        <button>2</button>
+
+                        <button class="button-firstpage">
+                            <img src=
+                            "../icon/btn-next-page.svg" alt="">
+                        </button>
+                        <button class="button-firstpage">
+                            <img src="../icon/btn-lastpage.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <dialog>
+                    <form action="">
+                        <div class="dialog-header">
+                            <p>Thông tin nhân viên<p>
+                        </div>
+
+                        <div class="dialog-main">
+
+                            <label for="employeeid">Mã nhân viên (*)</label>
+                            <div class="textbox">
+                                <input id="employeeid" type="text" placeholder="Mã nhân viên">
+                            </div>
+
+                            <label for="name">Họ và tên (*)</label>
+                            <div class="textbox">
+                                <input id="name" type="text" placeholder="Họ và tên">
+                            </div>
+
+                            <label for="sex">Giới tính</label>
+                            <!-- This one need to be dropdown -->
+
+                            <label for="birthdate">Ngày sinh</label>
+                            <!-- Um, datepicker? -->
+
+                            <label for="email">Email (*)</label>
+                            <div class="textbox">
+                                <input id="email" type="text" placeholder="Email">
+                            </div>
+
+                            <label for="phonenumber">Số điện thoại (*)</label>
+                            <div class="textbox">
+                                <input id="phonenumber" type="text" placeholder="Số điện thoại">
+                            </div>
+
+                            <label for="position">Vị trí</label>
+                            <!-- This one need to be dropdown -->
+
+                            <label for="department">Phòng ban</label>
+                            <!-- This one need to be dropdown -->
+
+                            <label for="address">Địa chỉ</label>
+                            <div class="textarea">
+                                <input id="phonenumber" type="text" placeholder="Địa chỉ">
+                            </div>
+                            <!-- idk how to make 2 columns, halp -->
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button">Huỷ</button>
+                            <button type="submit">Lưu</button>
+                        </div>
+                        
+                    </form>
+                </dialog>
+            </div>
+        </div>
+    </body>
+</html>
